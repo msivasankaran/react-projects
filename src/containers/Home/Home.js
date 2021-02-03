@@ -25,7 +25,7 @@ export default class Home extends Component {
             dashboard={this.dashBoardSwitch}
             mylog={this.myLogSwitch}
           />
-          <div className={this.state.dashboard ? null : null}>
+          <div className={this.state.dashboard ? "px-5 row" : null}>
             <DashBoard show={this.state.dashboard} />
             <MyLog show={this.state.myLog} />
           </div>
