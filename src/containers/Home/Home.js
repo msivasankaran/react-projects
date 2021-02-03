@@ -25,7 +25,13 @@ export default class Home extends Component {
             dashboard={this.dashBoardSwitch}
             mylog={this.myLogSwitch}
           />
-          <div className={this.state.dashboard ? "px-5 row" : null}>
+          <div
+            className={
+              this.state.dashboard
+                ? "px-5 d-flex flex-wrap justify-content-center"
+                : null
+            }
+          >
             <DashBoard show={this.state.dashboard} />
             <MyLog show={this.state.myLog} />
           </div>
